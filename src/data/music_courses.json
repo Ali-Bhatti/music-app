@@ -1,0 +1,37 @@
+{
+    "courses": [
+        {
+        "id": 1,
+        "title": "Introduction to Music Theory",
+        "slug": "introduction-to-music-theory",
+        "description": "Learn the basics of music theory, including scales, chords, and rhythm.",
+        "instructor": "John Doe",
+        "duration": "4 weeks",
+        "isFeatured": true,
+        "price": 49.99,
+        "image": "https://example.com/images/music-theory.jpg"
+        },
+        {
+        "id": 2,
+        "title": "Guitar for Beginners",
+        "slug": "guitar-for-beginners",
+        "description": "Start playing the guitar with this beginner-friendly course.",
+        "instructor": "Jane Smith",
+        "duration": "6 weeks",
+        "isFeatured": false,
+        "price": 39.99,
+        "image": "https://example.com/images/guitar-beginners.jpg"
+        },
+        {
+        "id": 3,
+        "title": "Piano Masterclass",
+        "slug": "piano-masterclass",
+        "description": "Master the piano with advanced techniques and repertoire.",
+        "instructor": "Emily Johnson",
+        "duration": "8 weeks",
+        "isFeatured": false,
+        "price": 59.99,
+        "image": "https://example.com/images/piano-masterclass.jpg"
+        }
+    ]
+}

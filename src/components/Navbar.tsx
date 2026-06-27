@@ -24,11 +24,11 @@ export default function Navbar({ className }: { className?: string }) {
                     item="Our Courses"
                 >
                     <div className="flex flex-col space-y-2">
-                        <HoveredLink href="/music">All Courses</HoveredLink>
-                        <HoveredLink href="/music">Basic Music Theory</HoveredLink>
-                        <HoveredLink href="/music">Advanced Composition</HoveredLink>
-                        <HoveredLink href="/music">Songwriting</HoveredLink>
-                        <HoveredLink href="/music">Music Production</HoveredLink>
+                        <HoveredLink href="/courses">All Courses</HoveredLink>
+                        <HoveredLink href="/courses/basic-music-theory">Basic Music Theory</HoveredLink>
+                        <HoveredLink href="/courses/advanced-composition">Advanced Composition</HoveredLink>
+                        <HoveredLink href="/courses/songwriting">Songwriting</HoveredLink>
+                        <HoveredLink href="/courses/music-production">Music Production</HoveredLink>
                     </div>
                 </MenuItem>
                 <Link

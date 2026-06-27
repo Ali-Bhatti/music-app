@@ -1,0 +1,40 @@
+{
+    "webinars": [
+        {
+            "title": "Mastering Music Theory Basics",
+            "description": "Join us for a live session covering scales, intervals, and chord construction. Perfect for beginners who want to build a solid foundation in music theory.",
+            "link": "/webinars/music-theory-basics",
+            "isFeatured": true
+        },
+        {
+            "title": "Songwriting Workshop: Find Your Voice",
+            "description": "Learn how to craft compelling melodies and meaningful lyrics. Our expert instructor will walk you through the creative process from idea to finished song.",
+            "link": "/webinars/songwriting-workshop",
+            "isFeatured": true
+        },
+        {
+            "title": "Intro to Music Production with Ableton",
+            "description": "Discover how to set up your DAW, create your first beat, and start producing professional-quality music from the comfort of your home studio.",
+            "link": "/webinars/ableton-intro",
+            "isFeatured": false
+        },
+        {
+            "title": "Guitar Techniques for Intermediate Players",
+            "description": "Take your guitar skills to the next level with advanced chord voicings, fingerpicking patterns, and improvisation techniques with a live Q&A session.",
+            "link": "/webinars/guitar-intermediate",
+            "isFeatured": true
+        },
+        {
+            "title": "Vocal Performance & Stage Presence",
+            "description": "Learn how to command the stage, control your breath, and deliver powerful vocal performances. Open to singers of all levels.",
+            "link": "/webinars/vocal-performance",
+            "isFeatured": false
+        },
+        {
+            "title": "Music Mixing & Mastering Essentials",
+            "description": "Understand the fundamentals of EQ, compression, reverb, and mastering. Walk away with the skills to make your tracks sound polished and release-ready.",
+            "link": "/webinars/mixing-mastering",
+            "isFeatured": true
+        }
+    ]
+}

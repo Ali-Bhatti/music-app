@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-export default function DarkModeToggle() {
+export default function DarkModeToggle({ className }: { className?: string }) {
     const [dark, setDark] = useState(false);
 
     useEffect(() => {
@@ -23,7 +23,7 @@ export default function DarkModeToggle() {
     return (
         <button
             onClick={toggle}
-            className="p-2 rounded-full text-sm font-medium transition-colors bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700"
+            className={`p-2 rounded-full text-sm font-medium transition-colors bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 ${className}`}
             aria-label="Toggle dark mode"
         >
             {dark ? "☀️ Light" : "🌙 Dark"}

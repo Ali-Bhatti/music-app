@@ -1,3 +1,4 @@
+'use client';
 import musicInstructors from '@/data/music_instructors.json';
 import { AnimatedTooltip } from './ui/animated-tooltip';
 import { WavyBackground } from './ui/wavy-background';

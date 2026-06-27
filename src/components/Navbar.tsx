@@ -37,9 +37,10 @@ export default function Navbar({ className }: { className?: string }) {
                 >
                     Contact Us
                 </Link>
-
             </Menu>
-            {/* <DarkModeToggle /> */}
+            <div className="absolute right-4 top-1/2 -translate-y-1/2">
+                <DarkModeToggle />
+            </div>
         </div>
     )
 }

@@ -38,13 +38,13 @@ const testimonials = [
 
 export default function Reviews() {
     return (
-        <div className="h-160 w-full flex flex-col antialiased bg-black bg-grid-white items-center justify-center relative overflow-hidden px-0 md:px-20 md:py-0 mx-auto">
+        <div className="h-160 w-full flex flex-col antialiased bg-white dark:bg-black bg-grid-black dark:bg-grid-white items-center justify-center relative overflow-hidden px-0 md:px-20 md:py-0 mx-auto">
             {/* Radial fade overlay */}
-            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_40%,#101828_100%)]" />
-            <h2 className="text-3xl font-bold text-center text-white z-10 mb-4">
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_40%,#f3f4f6_100%)] dark:bg-[radial-gradient(ellipse_at_center,transparent_40%,#101828_100%)]" />
+            <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white z-10 mb-4">
                 Hear Our Harmony: Real Stories from Our Students
             </h2>
-            <p className="text-center text-gray-400 mb-8 z-10">
+            <p className="text-center text-gray-600 dark:text-gray-400 mb-8 z-10">
                 Discover how our courses have transformed the lives of our students.
             </p>
             <InfiniteMovingCards

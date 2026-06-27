@@ -16,7 +16,17 @@ export const StickyScroll = ({
     contentClassName?: string;
 }) => {
     const [activeCard, setActiveCard] = React.useState(0);
+    const [isDark, setIsDark] = useState(true);
     const ref = useRef<any>(null);
+
+    useEffect(() => {
+        const update = () => setIsDark(document.documentElement.classList.contains("dark"));
+        update();
+        const observer = new MutationObserver(update);
+        observer.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
+        return () => observer.disconnect();
+    }, []);
+
     const { scrollYProgress } = useScroll({
         // uncomment line 22 and comment line 23 if you DONT want the overflow container and want to have it change on the entire page scroll
         // target: ref
@@ -40,11 +50,17 @@ export const StickyScroll = ({
         setActiveCard(closestBreakpointIndex);
     });
 
-    const backgroundColors = [
+    const darkBackgroundColors = [
         "#0f172a", // slate-900
         "#000000", // black
         "#171717", // neutral-900
     ];
+    const lightBackgroundColors = [
+        "#f8fafc", // slate-50
+        "#f3f4f6", // gray-100
+        "#ffffff", // white
+    ];
+    const backgroundColors = isDark ? darkBackgroundColors : lightBackgroundColors;
     const linearGradients = [
         "linear-gradient(to bottom right, #06b6d4, #10b981)", // cyan-500 to emerald-500
         "linear-gradient(to bottom right, #ec4899, #6366f1)", // pink-500 to indigo-500
@@ -78,7 +94,7 @@ export const StickyScroll = ({
                                 animate={{
                                     opacity: activeCard === index ? 1 : 0.3,
                                 }}
-                                className="text-2xl font-bold text-slate-100"
+                                className="text-2xl font-bold text-gray-900 dark:text-slate-100"
                             >
                                 {item.title}
                             </motion.h2>
@@ -89,7 +105,7 @@ export const StickyScroll = ({
                                 animate={{
                                     opacity: activeCard === index ? 1 : 0.3,
                                 }}
-                                className="text-kg mt-10 max-w-sm text-slate-300"
+                                className="text-lg mt-10 max-w-sm text-gray-600 dark:text-slate-300"
                             >
                                 {item.description}
                             </motion.p>

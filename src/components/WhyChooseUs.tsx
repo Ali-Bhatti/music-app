@@ -47,7 +47,7 @@ const musicScrollContent = [
 
 export default function WhyChooseUs() {
     return (
-        <div className="w-full">
+        <div className="w-full overflow-hidden">
             <StickyScroll content={musicScrollContent} />
         </div>
     )

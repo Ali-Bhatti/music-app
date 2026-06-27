@@ -6,7 +6,7 @@ A modern music education platform built with **Next.js 15**, **Tailwind CSS v4**
 
 - Next.js 15 (App Router)
 - Tailwind CSS v4
-- Aceternity UI components
+- Aceternity UI components (https://ui.aceternity.com)
 - Framer Motion
 - TypeScript
 
